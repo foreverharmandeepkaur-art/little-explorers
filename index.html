@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Little Explorers</title>
+    <style>
+        body {
+            background-image: url("background.png");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            text-align: center;
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+
+        h1 {
+            color: white;
+            font-size: 50px;
+            margin-top: 30px;
+            text-shadow: 2px 2px 5px black;
+        }
+
+        .tagline {
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+            font-style: italic;
+            text-shadow: 1px 1px 3px black;
+            margin-bottom: 40px;
+        }
+
+        .button-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            max-width: 500px;
+            margin: auto;
+        }
+button {
+    width: 300px;
+    height: 90px;
+
+    font-size: 24px;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    color: white;
+
+    border: none;
+    border-radius: 25px;
+
+    cursor: pointer;
+
+    margin: 12px;
+
+    box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+}
+        button:hover {
+    transform: scale(1.05);
+}
+
+        .colors {
+            background-color: #0D47A1;
+        }
+
+        .fruits {
+            background-color: #D32F2F;
+        }
+
+        .animals {
+            background-color: #388E3C;
+        }
+
+        .vehicles {
+            background-color: #7B1FA2;
+        }
+
+        .vegetables {
+            background-color: #F57C00;
+        }
+
+        .environment {
+            background-color: #1B5E20;
+        }
+
+        .space {
+            background-color: #1565C0;
+        }
+
+        .goodhabits {
+            background-color: #EC407A;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Little Explorers</h1>
+
+   <div style="
+    color: white;
+    font-family: Arial, sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    font-style: italic;
+    margin-bottom: 40px;
+">
+    Learn • Play • Explore
+</div>
+
+    <div style="margin-bottom: 20px;">
+
+    <div style="margin-bottom: 20px;">
+    <button class="colors"
+        onclick="window.location.href='colors.html'">
+        🎨 Colors
+    </button>
+
+    <button class="animals"
+        style="margin-left: 15px;"
+        onclick="window.location.href='animals.html'">
+        🐶 Animals
+    </button>
+</div>
+
+<div style="margin-bottom: 20px;">
+    <button class="vegetables"
+        onclick="window.location.href='vegetables.html'">
+        🥕 Vegetables
+    </button>
+
+    <button class="goodhabits"
+        style="margin-left: 15px;"
+        onclick="window.location.href='goodhabits.html'">
+        ✨ Good Habits
+    </button>
+</div>
+
+<div style="margin-bottom: 20px;">
+    <button class="fruits"
+        onclick="window.location.href='fruits.html'">
+        🍎 Fruits
+    </button>
+
+    <button class="vehicles"
+        style="margin-left: 15px;"
+        onclick="window.location.href='vehicles.html'">
+        🚗 Vehicles
+    </button>
+</div>
+
+<div>
+    <button class="space"
+        onclick="window.location.href='space.html'">
+        🛰 Space
+    </button>
+
+    <button class="environment"
+        style="margin-left: 15px;"
+        onclick="window.location.href='environment.html'">
+        🌍 Environment
+    </button>
+</div>
+
+</body>
+
+</html>

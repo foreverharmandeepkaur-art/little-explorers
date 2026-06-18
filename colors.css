@@ -1,0 +1,134 @@
+ html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url("background.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+h1 {
+    font-family: "Comic Sans MS", Arial, sans-serif;
+    color: white;
+    font-size: 50px;
+    text-shadow: 2px 2px 5px black;
+    margin-top: 30px;
+}
+
+p {
+    font-size: 22px;
+}
+
+#start-screen,
+#game-screen,
+#score-screen {
+    margin: 20px auto;
+    max-width: 600px;
+}
+
+button {
+    padding: 15px;
+    width: 250px;
+    height: 70px;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    border-radius: 12px;
+    color: white;
+    cursor: pointer;
+    margin: 10px;
+
+    transition: all 0.2s ease;
+}
+#option1,
+#option2,
+#option3,
+#option4 {
+    background-color: white;
+    color: black;
+
+    border: 5px solid;
+
+    border-radius: 20px;
+}
+#start-btn {
+    background-color: #4CAF50;
+}
+
+#back-btn {
+    background-color: #F44336;
+}
+
+
+#option1 {
+    border-color: #FF4081;   /* Hot Pink */
+}
+
+#option2 {
+    border-color: #26A69A;   /* Teal */
+}
+
+#option3 {
+    border-color: #FF9800;   /* Orange */
+}
+
+#option4 {
+    border-color: #7E57C2;   /* Purple */
+}
+
+#next-btn {
+    background-color: #FF9800;
+}
+#game-home-btn {
+    background-color: #F44336;
+}
+
+#play-again {
+    background-color: #FF9800;
+}
+
+#question {
+    background-color: white;
+    padding: 25px;
+    border-radius: 15px;
+    font-size: 24px;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    margin: 20px auto;
+}
+
+#question-image {
+    width: 140px;
+    height: auto;
+    margin: 8px auto;
+    display: block;
+    border-radius: 15px;
+}
+#feedback {
+    font-family: "Comic Sans MS", Arial, sans-serif;
+    font-size: 28px;
+    font-weight: bold;
+    color: black;
+    text-align: center;
+    margin-top: 20px;
+}
+#final-score {
+    background-color: white;
+    padding: 20px;
+    border-radius: 15px;
+    font-size: 28px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+#game-screen,
+#score-screen {
+    display: none;
+}

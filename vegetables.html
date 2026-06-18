@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Vegetables - Little Explorers</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+
+    <h1> Vegetables 🥕</h1>
+
+    <p><b><i>Let's Learn vegetables 🥕</i></b></p>
+
+    <!-- Start Screen -->
+    <div id="start-screen">
+
+        <button id="start-btn" onclick="startGame()">
+            ▶ Start Game
+        </button>
+
+        <button id ="back-btn" onclick="window.location.href='index.html'">
+            ⬅ Back to Home
+        </button>
+
+    </div>
+
+    <hr>
+
+    <!-- Game Screen -->
+    <div id="game-screen" style="display:none;">
+
+        <h2>Question 🌟</h2>
+
+        <p id="question"></p>
+        
+        <img id="question-image">
+
+      <button id= "option1" onclick="checkAnswer(this.innerText)">Red</button>
+<button id= "option2" onclick="checkAnswer(this.innerText)">Blue</button>
+<button id= "option3" onclick="checkAnswer(this.innerText)">Green</button>
+<button id= "option4" onclick="checkAnswer(this.innerText)">Yellow</button>
+        <p id="feedback"></p>
+
+       
+
+<button id="next-btn"
+        onclick="nextQuestion()">
+    Next ➡
+</button>
+        <button id="game-home-btn"
+        onclick="window.location.href='index.html'">
+     Home 🏠
+</button>
+
+    </div>
+
+    <hr> 
+    <p id="feedback"></p>
+
+    <!-- Score Screen -->
+    <div id="score-screen" style="display:none;">
+
+        <h2>🌟 Amazing Work! 🌟</h2>
+
+        <p id="final-score"></p>
+
+       <button id= "play-again" onclick="startGame()">🔄 Play Again</button>
+
+        <button id ="back-btn" onclick="window.location.href='index.html'">
+            Home 🏠
+        </button>
+
+    </div>
+<!-- JS CONNECTION (IMPORTANT) -->
+    <script src="vegetables.js"></script>
+
+</body>
+
+</html>
